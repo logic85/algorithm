@@ -5,6 +5,8 @@ In this case, some tricks might be required.
 For example, 2-dimension matrix adj can be replaced by
 adj[Size][Max connection] with indexs to refer. 
 
+- Related problems
+-- CCRICKET (https://algospot.com/judge/problem/read/CCRICKET#)
 */
 
 vector< vector<bool> > adj;
