@@ -1,5 +1,11 @@
 /*
 
+adj: Adjacency graph
+dist: Distance from s to e
+
+path(optional): Used to find the shortest path in lexicographically smallest order
+
+
 */
 
 vector < vector<pair<int, int>>> adj;
