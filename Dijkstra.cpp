@@ -5,6 +5,8 @@ dist: Distance from s to e
 
 path(optional): Used to find the shortest path in lexicographically smallest order
 
+- Related problems
+-- CHINATRIP (https://algospot.com/judge/problem/read/CHINATRIP#): Use path!
 
 */
 
