@@ -2,6 +2,15 @@
 
 DFS on adjacency graph.
 
+Sample code under is written to solve ZOMBIEROAD.
+adj includes zombie road(1) and normal road(0). (People on each normal road)
+Function dfs calculate number of zombie roads to remove to gather people on normal roads.
+ret: sum of number of zombie roads on its children, peopole found on its children.
+
+We can change the return type based on problems.
+
+- Related problems
+-- ZOMBIEROAD (https://algospot.com/judge/problem/read/ZOMBIEROAD)
 
 */
 
