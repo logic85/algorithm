@@ -4,6 +4,7 @@ Reconstructing details of the paths can be easily done during floyd running.
 
 - Related problems
 -- NEWBUS (https://algospot.com/judge/problem/read/NEWBUS) - Check the path (a, b) is single or not
+-- DRUNKEN (https://algospot.com/judge/problem/read/DRUNKEN) - distance (edge) + cost (node)
 */
 
 #define INF 987654321
