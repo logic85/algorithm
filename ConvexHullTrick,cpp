@@ -1,0 +1,25 @@
+
+
+ll dp[1000005], la[1000005], lb[1000005];
+
+double cross(int x, int y) {
+	return (double)(lb[y] - lb[x]) / (la[y] - la[x]);
+}
+
+void add(ll x, ll y) {
+	la[sz] = x;
+	lb[sz] = y;
+
+	while (sz > 1 && cross(sz, sz - 2) > cross(sz - 1, sz - 2)) {
+		la[sz - 1] = la[sz];
+		lb[sz - 1] = lb[sz];
+		sz--;
+	}
+	++sz;  
+}
+
+ll query(ll y) {
+	while (p + 1 < sz && cross(p, p + 1) > y) p++;
+
+	return lb[p] - y * la[p];
+}
