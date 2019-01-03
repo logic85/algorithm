@@ -18,8 +18,8 @@ void add(ll x, ll y) {
 	la[sz] = x;
 	lb[sz] = y;
 
-	// Erase element at (sz - 1) if intersection of sz - (sz-2) > intersection of (sz-1) - (sz-2)
-	while (sz > 1 && cross(sz, sz - 2) > cross(sz - 1, sz - 2)) {
+	// Erase element at (sz - 1) if intersection of sz - (sz-1) > intersection of (sz-1) - (sz-2)
+	while (sz > 1 && cross(sz, sz - 1) > cross(sz - 1, sz - 2)) {
 		la[sz - 1] = la[sz];
 		lb[sz - 1] = lb[sz];
 		sz--;
