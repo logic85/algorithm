@@ -14,9 +14,11 @@ double cross(int x, int y) {
 }
 
 void add(ll x, ll y) {
+	// Put first!
 	la[sz] = x;
 	lb[sz] = y;
 
+	// Erase element at (sz - 1) if intersection of sz - (sz-2) > intersection of (sz-1) - (sz-2)
 	while (sz > 1 && cross(sz, sz - 2) > cross(sz - 1, sz - 2)) {
 		la[sz - 1] = la[sz];
 		lb[sz - 1] = lb[sz];
@@ -26,6 +28,7 @@ void add(ll x, ll y) {
 }
 
 ll query(ll y) {
+	// Pop_front intersections behind y
 	while (p + 1 < sz && cross(p, p + 1) > y) p++;
 
 	// Recursion formula here!!
