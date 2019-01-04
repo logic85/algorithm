@@ -1,6 +1,10 @@
 /*
-DP of O(n^2) problem can be solved O(n * log n) through this trick.
-Constructing recursion formula is required.
+Some DP problems of O(n^2) with naive approach can be reduced to O(n * log n) through this trick.
+Constructing recursion formula is required for this.
+
+dp[i] = min_(j < i) (dp[j] + a[i] * b[j]) (b[j - 1] >= b[j])
+--> f(x = a[i]) = min_(j < i) (b[j] * x + dp[j])
+--> min value can be obtained from 1-dimension formulas
 
 - Related problems
 -- https://codeforces.com/contest/1083/problem/E
