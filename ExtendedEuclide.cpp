@@ -1,3 +1,10 @@
+/*
+When a and b are coprime relation, find (x, y) meets (ax + by = 1).
+
+- Related problems
+-- https://codeforces.com/contest/1396/problem/A
+*/
+
 int x, y;
 void extendedEuclide(int r0, int r1, int s0, int s1, int t0, int t1) {
     int r2 = r0 % r1;
