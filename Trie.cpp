@@ -1,3 +1,10 @@
+/*
+Customize insert & elements (such as terminal) for each problem.
+
+- Related problems
+-- KAKAO 2020 entry test #4 (https://programmers.co.kr/learn/courses/30/lessons/60060#)
+*/
+
 const int ALPHABETS = 26;
 int toNumber(char ch) {return ch - 'A';}
 
